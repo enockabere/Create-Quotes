@@ -1,2 +1,3 @@
 <p>{{addQuote.qDescription}}</p>
 <button (click)= 'deleteQuote(true)' class="btn btn-danger">Delete</button>
+<p>Days passed since it was posted {{addQuote.publishDate|elapsedTime}}</p>

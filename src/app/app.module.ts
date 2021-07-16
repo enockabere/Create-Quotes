@@ -8,6 +8,7 @@ import { HeroSectionComponent } from './hero-section/hero-section.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { AboutQuoteComponent } from './about-quote/about-quote.component';
 import { HoverDirective } from './hover.directive';
+import { ElapsedTimePipe } from './elapsed-time.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HoverDirective } from './hover.directive';
     HeroSectionComponent,
     QuotesComponent,
     AboutQuoteComponent,
-    HoverDirective
+    HoverDirective,
+    ElapsedTimePipe
   ],
   imports: [
     BrowserModule,
