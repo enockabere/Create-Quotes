@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HeroSectionComponent } from './hero-section/hero-section.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { AboutQuoteComponent } from './about-quote/about-quote.component';
+import { HoverDirective } from './hover.directive';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AboutQuoteComponent } from './about-quote/about-quote.component';
     NavbarComponent,
     HeroSectionComponent,
     QuotesComponent,
-    AboutQuoteComponent
+    AboutQuoteComponent,
+    HoverDirective
   ],
   imports: [
     BrowserModule,
