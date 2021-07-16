@@ -25,6 +25,12 @@ export class QuotesComponent implements OnInit {
       }
     }
   }
+  addNewQuote(sasa:any){
+    let quotelenght = this.memes.length;
+    sasa.id = quotelenght+1;
+    sasa.postDate = new Date (sasa.postDate)
+    this.memes.push(sasa)
+  }
   constructor() { }
 
   ngOnInit(): void {

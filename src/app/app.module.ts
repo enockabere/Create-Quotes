@@ -9,6 +9,8 @@ import { QuotesComponent } from './quotes/quotes.component';
 import { AboutQuoteComponent } from './about-quote/about-quote.component';
 import { HoverDirective } from './hover.directive';
 import { ElapsedTimePipe } from './elapsed-time.pipe';
+import { CreateQuoteComponent } from './create-quote/create-quote.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { ElapsedTimePipe } from './elapsed-time.pipe';
     QuotesComponent,
     AboutQuoteComponent,
     HoverDirective,
-    ElapsedTimePipe
+    ElapsedTimePipe,
+    CreateQuoteComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
