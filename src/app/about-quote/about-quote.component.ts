@@ -11,10 +11,17 @@ export class AboutQuoteComponent implements OnInit {
   @Input() addQuote: MyQuotes;
   @Output() qDelete = new EventEmitter <boolean> ();
 
+  numberOfLikes: number = 0;
+
+  likeButtonClick(){
+    this.numberOfLikes++;
+  }
+  dislikeButtonClick(){
+    this.numberOfLikes--;
+  }
   deleteQuote (y:boolean){
     this.qDelete.emit(y);
   }
-
   constructor() { }
 
   ngOnInit(): void {

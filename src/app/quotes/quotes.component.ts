@@ -31,6 +31,7 @@ export class QuotesComponent implements OnInit {
     sasa.postDate = new Date (sasa.postDate)
     this.memes.push(sasa)
   }
+
   constructor() { }
 
   ngOnInit(): void {
