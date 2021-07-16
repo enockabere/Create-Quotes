@@ -9,12 +9,14 @@ import { MyQuotes } from '../my-quotes';
 export class QuotesComponent implements OnInit {
 
   memes: MyQuotes [] = [
-    {quoteId:1, quoteTitle:'Mambo Ya Stima', qDescription: 'Mambo ya stima achia watu wa stima. Ntakufinya!'},
-    {quoteId:2, quoteTitle:'Life Hack', qDescription: 'Ama niambie landlord nikae ile nyumba haina mtu kuliko ikae bure, ikipata mtu nihame'},
-    {quoteId:1, quoteTitle:'Kizangila', qDescription:'Omosh, this property is not for sale'},
-    {quoteId:1, quoteTitle:'Nduthi Guys', qDescription: 'Weka simu kwa mfuko ukiona nduthi guys'}
+    new MyQuotes (1, 'Mambo Ya Stima', 'Mambo ya stima achia watu wa stima. Ntakufinya!'),
+    new MyQuotes (2, 'Life Hack', 'Ama niambie landlord nikae ile nyumba haina mtu kuliko ikae bure, ikipata mtu nihame'),
+    new MyQuotes (3, 'Kizangila', 'Omosh, this property is not for sale'),
+    new MyQuotes (4, 'Nduthi Guys', 'Weka simu kwa mfuko ukiona nduthi guys')
   ]
-
+  toggleDescription(index:any){
+    this.memes[index].showQuoteDescription = !this.memes[index].showQuoteDescription;
+  }
   constructor() { }
 
   ngOnInit(): void {

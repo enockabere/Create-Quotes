@@ -1,11 +1,7 @@
 export class MyQuotes {
-    quoteId : number;
-    quoteTitle : string;
-    qDescription: string;
+    showQuoteDescription: boolean;
 
-    constructor(quoteId:number, quoteTitle:string, qDescription:string){
-        this.quoteId = quoteId;
-        this.quoteTitle = quoteTitle;
-        this.qDescription = qDescription;
+    constructor(public quoteId:number, public quoteTitle:string, public qDescription:string){
+        this.showQuoteDescription = false;
     }
 }
