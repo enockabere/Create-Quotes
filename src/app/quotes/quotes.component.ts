@@ -17,6 +17,11 @@ export class QuotesComponent implements OnInit {
   toggleDescription(index:any){
     this.memes[index].showQuoteDescription = !this.memes[index].showQuoteDescription;
   }
+  removeQuote(qDelete:boolean, index:number){
+    if (qDelete){
+      this.memes.splice(index,1);
+    }
+  }
   constructor() { }
 
   ngOnInit(): void {
