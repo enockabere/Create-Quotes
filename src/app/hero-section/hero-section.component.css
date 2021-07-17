@@ -37,3 +37,15 @@
      margin-left: 45%;
      margin-top: 30vh;
  }
+ @media screen and (min-width: 480px) and (max-width: 767px) {
+	.scrollBut {
+		margin-top: 10vh;
+        margin-left: 40%;
+	}
+}
+ @media screen and (min-width: 320px) and (max-width: 480px) {
+	.scrollBut{
+		margin-top: 5vh;
+        margin-left: 40%;
+	}
+}
