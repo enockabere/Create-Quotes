@@ -1,5 +1,5 @@
 <p>{{addQuote.qDescription}}</p>
 <button (click)= 'deleteQuote(true)' class="btn btn-danger">Delete</button>
-<p>Days passed since it was posted {{addQuote.publishDate|elapsedTime}}</p>
+<p>Days passed since it was posted {{addQuote.completeDate|elapsedTime}}</p>
 <P>{{numberOfLikes}}</P>
-<button (click)='likeButtonClick()'> Like</button>
+<button (click)='likeButtonClick()'> Like</button><p>Author{{addQuote.author}}</p>
