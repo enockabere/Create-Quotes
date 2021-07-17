@@ -11,6 +11,7 @@ import { HoverDirective } from './hover.directive';
 import { ElapsedTimePipe } from './elapsed-time.pipe';
 import { CreateQuoteComponent } from './create-quote/create-quote.component';
 import { FormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormsModule } from '@angular/forms';
     AboutQuoteComponent,
     HoverDirective,
     ElapsedTimePipe,
-    CreateQuoteComponent
+    CreateQuoteComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
