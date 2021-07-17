@@ -1,0 +1,10 @@
+.modal{
+    background-color:rgb(44, 41, 41);opacity:0.8;
+}
+#mBut{
+    margin-top: 10px;
+}
+#mBut:hover{
+    background-color: #3C1874;
+    border: #3C1874;
+}
