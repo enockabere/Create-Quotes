@@ -1,0 +1,72 @@
+.quotes{
+    background-color: #e5eaf5;
+    padding-bottom: 50px;
+}
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #DADED4;
+    margin-top: 20px;
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 4px;
+    color: black;
+    content: "/\00a0";
+  }
+  ul.breadcrumb li a {
+    color: red;
+    text-decoration: none;
+  }
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+  }
+.list-group{
+    padding-top: 30px;
+}
+.cards{
+    background-color:  #A3BCB6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 10px #aca3a3;
+}
+.cards:hover{
+    background-color:   #DCE1E3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 10px #aca3a3;
+}
+.d-flex h5{
+    font-size: 19px;
+    padding-bottom: 10px;
+}
+#rBtn{
+    font-size: 14px;
+    margin-bottom: 19px;
+}
+#rBtn:hover{
+    background-color: #3C1874;
+    border: #3C1874;
+}
+small{
+    color:#126796;
+}
+.smalls{
+    color: #12232E;
+}
+#s2{
+    font-style: italic;
+    font-size: 12px;
+    margin-left: 45px;
+}
+.modalBut{
+    margin-top: 20px;
+}
+#mBut:hover{
+    background-color: #3C1874;
+    border: #3C1874;
+}

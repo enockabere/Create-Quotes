@@ -12,12 +12,13 @@ export class AboutQuoteComponent implements OnInit {
   @Output() qDelete = new EventEmitter <boolean> ();
 
   numberOfLikes: number = 0;
+  numberOfDislikes: number = 0;
 
   likeButtonClick(){
     this.numberOfLikes++;
   }
   dislikeButtonClick(){
-    this.numberOfLikes--;
+    this.numberOfDislikes++;
   }
   deleteQuote (y:boolean){
     this.qDelete.emit(y);

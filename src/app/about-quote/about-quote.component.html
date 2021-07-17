@@ -1,5 +1,31 @@
-<p>{{addQuote.qDescription}}</p>
-<button (click)= 'deleteQuote(true)' class="btn btn-danger">Delete</button>
-<p>Days passed since it was posted {{addQuote.completeDate|elapsedTime}}</p>
-<P>{{numberOfLikes}}</P>
-<button (click)='likeButtonClick()'> Like</button><p>Author{{addQuote.author}}</p>
+<div class="child">
+  <p>{{addQuote.qDescription}}</p>
+
+  <div class="children">
+    <ul class="navs">
+      <li>
+        <P class="childP1">{{numberOfLikes}}</P>
+      </li>
+      <li>
+        <button class="btn btn-success" (click)='likeButtonClick()' id="ico">
+          <i class="fa fa-thumbs-up" aria-hidden="true">Like</i>
+        </button>
+      </li>
+      <li>
+        <P class="childP">{{numberOfDislikes}}</P>
+      </li>
+      <li>
+        <button class="btn btn-success" (click)='dislikeButtonClick()' id="ico1">
+          <i class="fa fa-thumbs-up" aria-hidden="true">Dislike</i>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div class="child2">
+    <ul class="navs">
+      <li><small><span class="smalls">Author:</span> {{addQuote.author}}</small></li>
+      <li><small><span class="smalls">Time Active:</span> {{addQuote.completeDate|elapsedTime}}</small></li>
+    </ul>
+  </div>
+  <button (click)='deleteQuote(true)' class="btn btn-danger">Delete</button>
+</div>
