@@ -70,3 +70,17 @@ small{
     background-color: #3C1874;
     border: #3C1874;
 }
+.navs{
+    list-style-type: none;
+    margin: 0;
+  padding: 0;
+}
+.navs li{
+    display: inline-block;
+  padding: 4px;
+}
+.sm1 p{
+    font-size: 12px;
+    color: #3C1874;
+    text-align: right;
+}

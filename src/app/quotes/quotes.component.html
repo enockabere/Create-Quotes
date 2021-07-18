@@ -12,12 +12,18 @@
             <div id="cols" class="col-md-3" *ngFor='let num of memes; let i=index'>
                 <div  class="list-group" >
                    <div class="cards">
-                      <div  class="d-flex w-100 justify-content-between" >
-                        <h5 class="mb-1" appHover>{{ num.quoteTitle }}</h5>
-                        <small><span class="smalls">Posted By:</span> {{num.owner}}</small>
-                      </div>
-                      <button type="submit" (click)='toggleDescription(i)' id="rBtn" class="btn btn-success">Read Quote</button>
-                      <small id="s2"> <span class="smalls">Posted On:</span> {{num.completeDate|date}}</small>
+                     <ul class="navs">
+                       <li><h5 class="mb-1" appHover>{{ num.quoteTitle }}</h5></li>
+                       <li class="sm1"><p><span class="smalls">Posted By:</span> {{num.owner}}</p></li>
+                     </ul>
+                      <ul class="navs">
+                        <li>
+                          <button type="submit" (click)='toggleDescription(i)' id="rBtn" class="btn btn-success">Read Quote</button>
+                        </li>
+                        <li class="sm1">
+                          <p><span class="smalls">Posted On:</span> {{num.completeDate|date}}</p>
+                        </li>
+                      </ul>
                       <app-about-quote *ngIf='num.showQuoteDescription' [addQuote]='num' (qDelete)='removeQuote($event,i)'>
                     </app-about-quote>
                 </div>
