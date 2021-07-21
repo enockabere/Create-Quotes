@@ -12,7 +12,7 @@
     To run the application:
       -Open Terminal {Ctrl+Alt+T}
       -cd into Directory
-      -git clone https://github.com/enockabere/Crust-Cottage.git
+      -git clone https://github.com/enockabere/Create-Quotes.git
       -Open angular files on your code editor or serve on the browser
 ​
 ## Known Bugs
@@ -28,7 +28,7 @@
     - After the quote has been published, you can interact with the app by liking, disliking or delete quote.
     
 ## Live link
-    [Create-Quotes](https://enockabere.github.io/Create-Quotes/)
+    [Create-Quotes](https://practical-brown-6b2d6d.netlify.app/)
 ​
 ## Technologies used
     - HTML
