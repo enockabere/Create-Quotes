@@ -28,7 +28,7 @@
     - After the quote has been published, you can interact with the app by liking, disliking or delete quote.
     
 ## Live link
-    [Crust Cottage](https://enockabere.github.io/Crust-Cottage/)
+    [Create-Quotes](https://enockabere.github.io/Create-Quotes/)
 ​
 ## Technologies used
     - HTML
